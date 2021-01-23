@@ -3,7 +3,9 @@ from django.db import models
 # Create your models here.
 
 from django.utils import timezone
+from django.shortcuts import render
 
+#from .models import Post
 
 class Post(models.Model):
     author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
